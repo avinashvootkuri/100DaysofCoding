@@ -6,12 +6,8 @@ print(logo)
 
 chosen_word = random.choice(word_list)
 
-#Testing code
-print(F"the solution is {chosen_word}")
-
 display = []
-#TODO - Create a empty list
-# For each letter in the chosen work add a "_" to 'display
+
 for n in chosen_word:
     display.append("_")
 
@@ -49,9 +45,7 @@ while end_of_game == False:
     if '_' not in display:
         end_of_game = True
         print("You win")  
-        
-    print(stages[no_of_lifes])
-# print(display)
 
-# print('You win')
+    print(stages[no_of_lifes])
+
     
