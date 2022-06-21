@@ -9,6 +9,7 @@ compare_A = random.randint(0,len(data)-1)
 compare_B = random.randint(0,len(data)-1)
 
 def compare(A, B, user,end):
+    """Compare follower count and return end flag"""
     if A['follower_count'] > B ['follower_count'] and user == 'A':
         end = False
     elif A['follower_count'] < B ['follower_count'] and user == 'B':
